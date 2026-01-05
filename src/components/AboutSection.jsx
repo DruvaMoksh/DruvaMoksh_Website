@@ -5,11 +5,28 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
     return (
+        <>
+            <style>{`
+                @media (max-width: 991px) {
+                    .about-thumb-shift {
+                        transform: translateY(0) !important;
+                    }
+                    .about-text-shift {
+                        padding-right: 15px !important;
+                    }
+                }
+            `}</style>
         <div className="about-area about-us-area" style={{ backgroundColor: '#020617', padding: '100px 0', position: 'relative' }}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-6 mb-5 mb-lg-0">
-                        <div className="about-thumb" style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+                        <div className="about-thumb about-thumb-shift" style={{ 
+                            position: 'relative', 
+                            display: 'flex', 
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            transform: 'translateY(-40px)'
+                        }}>
                             <motion.img
                                 src={aboutThumb}
                                 alt="Modern Technology"
@@ -28,7 +45,7 @@ const AboutSection = () => {
                                 }}
                             />
 
-                            <motion.div
+                            {/* <motion.div
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -49,11 +66,11 @@ const AboutSection = () => {
                                 }}
                             >
                                 BEST IT SOLUTION
-                            </motion.div>
+                            </motion.div> */}
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="section-title text-left">
+                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '60px' }}>
+                        <div className="section-title text-left" style={{ maxWidth: '90%' }}>
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -138,6 +155,7 @@ const AboutSection = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
