@@ -489,7 +489,7 @@ const Projects = () => {
                         }}>
                             Get In Touch <i className="fa fa-arrow-right" style={{ marginLeft: '8px' }}></i>
                         </Link>
-                        <Link to="/services" style={{
+                        {/* <Link to="/services" style={{
                             backgroundColor: 'transparent',
                             color: '#fff',
                             border: '1px solid rgba(255,255,255,0.2)',
@@ -500,7 +500,7 @@ const Projects = () => {
                             display: 'inline-block'
                         }}>
                             View Our Services
-                        </Link>
+                        </Link> */}
                     </div>
                 </motion.div>
 

@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
 
             {/* --- CONTACT CONTENT --- */}
-            <div className="contact-area" style={{ padding: '80px 0', backgroundColor: '#020617' }}>
+            <div className="contact-area" style={{ padding: '80px 0' }}>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8 col-md-12 mb-5">

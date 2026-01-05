@@ -26,7 +26,7 @@ const AboutSection = () => {
                             display: 'flex', 
                             justifyContent: 'center',
                             alignItems: 'center',
-                            transform: 'translateY(-60px)'
+                            transform: 'translateY(-270px)'
                         }}>
                             <motion.img
                                 src={aboutThumb}
@@ -70,7 +70,7 @@ const AboutSection = () => {
                             </motion.div> */}
                         </div>
                     </div>
-                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '80px', marginLeft: '-40px' }}>
+                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '80px', marginLeft: '-80px' }}>
                         <div className="section-title text-left" style={{ maxWidth: '85%' }}>
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
