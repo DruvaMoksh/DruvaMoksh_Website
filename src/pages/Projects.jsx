@@ -150,13 +150,13 @@ const Projects = () => {
             stack: ["Python", "NLP", "Semantic Similarity Models"],
             link: "#"
         },
-        {
-            category: "Manufacturing",
-            title: "Sivasubra",
-            desc: "Created a defect detection system for the automotive manufacturing domain using image-based inspection. Applied transfer learning techniques to classify defective components in real time, improving quality assurance efficiency on production lines.",
-            stack: ["React", "Node.js", "Python"],
-            link: "#"
-        },
+        // {
+        //     category: "Manufacturing",
+        //     title: "Sivasubra",
+        //     desc: "Created a defect detection system for the automotive manufacturing domain using image-based inspection. Applied transfer learning techniques to classify defective components in real time, improving quality assurance efficiency on production lines.",
+        //     stack: ["React", "Node.js", "Python"],
+        //     link: "#"
+        // },
         {
             category: "Saas",
             title: "Project Agents",
@@ -172,13 +172,13 @@ const Projects = () => {
             stack: ["Python", "AI"],
             link: "#"
         },
-        {
-            category: "Government",
-            title: "Sindhu",
-            desc: "Built a computer vision system to monitor elderly residents and detect safety-related incidents. Deployed an ensemble-based vision pipeline for activity recognition and object detection, enabling automated alerts while preserving privacy.",
-            stack: ["Python", "AI", "Computer Vision"],
-            link: "#"
-        },
+        // {
+        //     category: "Government",
+        //     title: "Sindhu",
+        //     desc: "Built a computer vision system to monitor elderly residents and detect safety-related incidents. Deployed an ensemble-based vision pipeline for activity recognition and object detection, enabling automated alerts while preserving privacy.",
+        //     stack: ["Python", "AI", "Computer Vision"],
+        //     link: "#"
+        // },
         {
             category: "Manufacturing",
             title: "Kripaya Solutions",
