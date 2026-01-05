@@ -1,6 +1,5 @@
 import React from 'react';
-import aboutThumb from '../assets/images/about-thumb.png';
-import aboutShape from '../assets/images/about1.png';
+import aboutThumb from '../assets/images/OIG4 (2).jpeg';
 import aboutIcon from '../assets/images/about4.png';
 import { motion } from 'framer-motion';
 
@@ -10,21 +9,24 @@ const AboutSection = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-6 mb-5 mb-lg-0">
-                        <div className="about-thumb" style={{ position: 'relative' }}>
+                        <div className="about-thumb" style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
                             <motion.img
                                 src={aboutThumb}
-                                alt="about-thumb"
+                                alt="Modern Technology"
                                 className="img-fluid"
-                                initial={{ opacity: 0, x: -50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
-                                style={{ borderRadius: '24px', position: 'relative', zIndex: 2 }}
+                                style={{ 
+                                    borderRadius: '24px', 
+                                    position: 'relative', 
+                                    zIndex: 2,
+                                    maxWidth: '100%',
+                                    boxShadow: '0 20px 60px rgba(255, 60, 0, 0.15)',
+                                    border: '2px solid rgba(255, 60, 0, 0.1)'
+                                }}
                             />
-                            {/* Abstract shape background if needed, ensuring it blends */}
-                            <div className="about-shape" style={{ zIndex: 1, opacity: 0.5 }}>
-                                <img src={aboutShape} alt="about1" />
-                            </div>
 
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.8 }}
@@ -34,13 +36,16 @@ const AboutSection = () => {
                                     position: 'absolute',
                                     bottom: '30px',
                                     right: '30px',
-                                    background: '#ff3c00',
-                                    padding: '15px 25px',
+                                    background: 'linear-gradient(135deg, #ff3c00 0%, #ff6a00 100%)',
+                                    padding: '15px 30px',
                                     borderRadius: '12px',
                                     color: '#fff',
                                     fontWeight: '700',
                                     zIndex: 3,
-                                    boxShadow: '0 10px 20px rgba(255, 60, 0, 0.3)'
+                                    boxShadow: '0 10px 30px rgba(255, 60, 0, 0.4)',
+                                    backdropFilter: 'blur(10px)',
+                                    fontSize: '14px',
+                                    letterSpacing: '1px'
                                 }}
                             >
                                 BEST IT SOLUTION
