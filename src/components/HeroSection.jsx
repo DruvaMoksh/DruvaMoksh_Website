@@ -82,7 +82,7 @@ const HeroSection = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.8 }}
                             >
-                                <a href="about-us.html">EXPLORE MORE
+                                <a href="/about">EXPLORE MORE
                                     <div className="druvamoksh-hover-btn hover-bx"></div>
                                     <div className="druvamoksh-hover-btn hover-bx2"></div>
                                     <div className="druvamoksh-hover-btn hover-bx3"></div>
