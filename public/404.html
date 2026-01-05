@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DruvaMoksh</title>
+    <script>
+      // Store the path for React Router to handle after redirect
+      sessionStorage.setItem('redirectPath', window.location.pathname + window.location.search);
+      // Redirect to the root index.html
+      window.location.replace('/');
+    </script>
+  </head>
+  <body>
+    <!-- GitHub Pages will serve this when a route is not found -->
+  </body>
+</html>
