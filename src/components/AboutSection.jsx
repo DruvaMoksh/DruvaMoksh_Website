@@ -13,6 +13,7 @@ const AboutSection = () => {
                     }
                     .about-text-shift {
                         padding-right: 15px !important;
+                        margin-left: 0 !important;
                     }
                 }
             `}</style>
@@ -25,7 +26,7 @@ const AboutSection = () => {
                             display: 'flex', 
                             justifyContent: 'center',
                             alignItems: 'center',
-                            transform: 'translateY(-40px)'
+                            transform: 'translateY(-60px)'
                         }}>
                             <motion.img
                                 src={aboutThumb}
@@ -69,8 +70,8 @@ const AboutSection = () => {
                             </motion.div> */}
                         </div>
                     </div>
-                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '60px' }}>
-                        <div className="section-title text-left" style={{ maxWidth: '90%' }}>
+                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '80px', marginLeft: '-40px' }}>
+                        <div className="section-title text-left" style={{ maxWidth: '85%' }}>
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
