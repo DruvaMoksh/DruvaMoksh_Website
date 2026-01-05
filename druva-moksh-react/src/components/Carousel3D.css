@@ -1,0 +1,87 @@
+/* 3D Carousel Container */
+.carousel-container {
+    margin: 100px auto;
+    width: 180px;
+    height: 280px;
+    position: relative;
+    perspective: 1000px;
+}
+
+/* The Rotating Cylinder */
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+}
+
+/* .carousel:hover {
+  animation-play-state: paused;
+} removed as per request */
+
+/* Individual Cards */
+.carousel-item {
+    display: block;
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    left: 0;
+    top: 0;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #eee;
+    /* Backface visibility is optional, usually we want to see them */
+    backface-visibility: visible;
+    opacity: 0.95;
+}
+
+/* Keyframes for Rotation */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Responsive Fallback: Disable 3D on small screens */
+@media (max-width: 991px) {
+    .carousel-container {
+        perspective: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: flex;
+        /* Or grid */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .carousel {
+        position: static;
+        transform-style: flat;
+        animation: none;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .carousel-item {
+        position: static;
+        transform: none !important;
+        /* Override inline 3D transforms */
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
