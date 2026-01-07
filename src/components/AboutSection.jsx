@@ -10,10 +10,14 @@ const AboutSection = () => {
                 @media (max-width: 991px) {
                     .about-thumb-shift {
                         transform: translateY(0) !important;
+                        margin-left: 5px !important;
                     }
                     .about-text-shift {
-                        padding-right: 15px !important;
-                        margin-left: 0 !important;
+                        padding-right: 10px !important;
+                        margin-left: 20px !important;
+                    }
+                    .about-box {
+                        margin-left: -30px !important;
                     }
                 }
             `}</style>
@@ -70,8 +74,11 @@ const AboutSection = () => {
                             </motion.div> */}
                         </div>
                     </div>
-                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '80px', marginLeft: '-80px' }}>
-                        <div className="section-title text-left" style={{ maxWidth: '85%' }}>
+                    <div className="col-lg-6 about-text-shift" style={{ paddingRight: '70px'}}>
+                        <div
+                            className="section-title text-left hero-heading-shift"
+                            style={{ maxWidth: '85%', transform: 'translateX(-20px)'  }}
+                            >
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -87,7 +94,7 @@ const AboutSection = () => {
                                 <h1 className="section-main-title" style={{ fontSize: '48px', fontWeight: '700', marginBottom: '25px', color: '#fff', lineHeight: '1.2' }}>
                                     Modern <span style={{ color: '#ff3c00' }}>Businesses.</span>
                                 </h1>
-                                <p className="section-title-descr" style={{ color: '#94a3b8', fontSize: '18px', lineHeight: '1.6', marginBottom: '30px' }}>
+                                <p className="section-title-descr" style={{ color: '#94a3b8', fontSize: '18px', lineHeight: '1.6', marginBottom: '30px', transform: 'translateX(30px)'  }}>
                                     We deliver adaptable, future-ready IT infrastructure tailored to the needs of evolving businesses. At Druva Moksh, we design intelligent systems that simplify operations and scale with your vision.
                                 </p>
                             </motion.div>
@@ -95,10 +102,6 @@ const AboutSection = () => {
 
                         <motion.div
                             className="about-box d-flex align-items-center"
-                            initial={{ opacity: 0, x: 30 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            viewport={{ once: true }}
                             style={{
                                 backgroundColor: '#0f172a',
                                 padding: '20px 30px',
@@ -106,9 +109,11 @@ const AboutSection = () => {
                                 border: '1px solid rgba(255, 255, 255, 0.05)',
                                 marginBottom: '30px',
                                 display: 'inline-flex',
-                                alignItems: 'center'
+                                alignItems: 'center',
+                                transform: 'translateX(-5px)'   // 👈 match heading shift
                             }}
-                        >
+                            >
+
                             <div className="about-icon" style={{ marginRight: '20px' }}>
                                 <img src={aboutIcon} alt="about4" style={{ width: '50px' }} />
                             </div>
@@ -147,6 +152,7 @@ const AboutSection = () => {
                                 display: 'inline-block',
                                 fontSize: '15px',
                                 letterSpacing: '1px',
+                                transform: 'translateX(-15px)',
                                 boxShadow: '0 10px 20px rgba(255, 60, 0, 0.2)'
                             }}>
                                 EXPLORE MORE

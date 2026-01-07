@@ -41,7 +41,7 @@ const ProjectSection = () => {
                                 viewport={{ once: true }}
                             >
                                 <h5 className="section-sub-title" style={{ color: '#ff3c00', fontSize: '14px', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 'bold' }}>druvamoksh PROJECT</h5>
-                                <h1 className="section-main-title" style={{ color: '#fff', fontSize: '48px', fontWeight: '700' }}>Company <span style={{ color: '#ff3c00' }}>Collaborators</span></h1>
+                                <h1 className="section-main-title" style={{ color: '#ff3c00', fontSize: '48px', fontWeight: '700' }}>Company <span style={{ color: '#ff3c00' }}>Collaborators</span></h1>
                             </motion.div>
                         </div>
                     </div>
@@ -68,6 +68,7 @@ const ProjectSection = () => {
                         {marqueeProjects.map((project, index) => (
                             <div
                                 key={index}
+                                className="project-card-wrapper"
                                 style={{ minWidth: '350px', flex: '0 0 auto' }}
                             >
                                 <div className="project-single-box" style={{

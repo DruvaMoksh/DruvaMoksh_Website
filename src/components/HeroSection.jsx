@@ -65,7 +65,7 @@ const HeroSection = () => {
                                 transition={{ duration: 1, ease: "easeOut" }}
                                 style={{ fontSize: '72px', fontWeight: '800', lineHeight: '1.1', marginBottom: '20px' }}
                             >
-                                Intelligence Engineered,<br />
+                                Intelligence Engineered, <br />
                                 <span style={{ color: '#ff3c00' }}>Innovation Delivered.</span>
                             </motion.h1>
                             <motion.p
